@@ -5,14 +5,14 @@ int main()
 {
     fstream MyFile;
     MyFile.open("/Users/abhimanyukunal/Downloads/sum.txt",ios::in);
-    int sum=0;
+    int diff=0;
     string line;
     while(getline(MyFile,line))
     {
-        sum+=stoi(line);
+        diff-=stoi(line);
     }
     MyFile.close();
-    cout<<"Sum is : "<<sum;
+    cout<<"Sum is : "<<diff;
     cin.get();
     return 0;
 }
